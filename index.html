@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IT370-DZ01</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded mb-3 fixed-top" role="navigation">
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">IT355-DZ01</a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#informacije">Informacije</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#aplikacija">Odabrana aplikacija</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#graficki">Graficki prikaz</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container" id="informacije">
+    <h2>Informacije o domacem zadatku</h2>
+    <hr>
+    <h4>Cilj zadatka</h4>
+    <p class="text-justify">Dizajnirati interaktivnu infografiku (vizuelizaciju podataka) o nedeljnom unosu namirnica po
+        kategorijama:
+        ugljeni hidrati, proteini, belančevine, voće, povrće, pića i napici u toku nedelju dana – odnos tokom jedne
+        nedelje- 7 dana!</p>
+    <h4 id="aplikacija">Odabrana aplikacija</h4>
+    <p>Aplikacija odabrana za pracenje unosa kalorija i namirnica je <a
+            href="https://play.google.com/store/apps/details?id=com.fourtechnologies.mynetdiary.ad&hl=en&rdid=com.fourtechnologies.mynetdiary.ad">Calorie
+        Counter - MyNetDiary</a>.</p>
+    <p>Razlozi zasto je ova aplikacija odabrana: </p>
+    <ul>
+        <li>Veoma laka za koriscenje</li>
+        <li>Brzo dodavanje i pretrazivanje hrane</li>
+        <li>Veoma cist i jasan interfejs</li>
+        <li>Velika baza podataka sa hranom</li>
+        <li>Najmanje vremena potrebno za unos podataka od svih testiranih aplikacija</li>
+    </ul>
+    <p>U nastavku se mogu videti neki screenshotovi iz same aplikacije.</p>
+    <div class="row">
+        <div class="col-md-4"><img src="img/screenshot.png" class="img-fluid" alt=""></div>
+        <div class="col-md-4"><img src="img/screenshot2.png" class="img-fluid" alt=""></div>
+        <div class="col-md-4"><img src="img/screenshot3.png" class="img-fluid" alt=""></div>
+    </div>
+</div>
+<br>
+
+<div class="container mb-3" id="graficki">
+    <div class="row">
+        <div class="col-md-12 mb-4 mt-3">
+            <h2>Graficki prikaz unosa kalorija</h2>
+            <hr>
+        </div>
+
+        <div class="col-md-8">
+            <h5>Unos kalorija u toku nedelje sa optimalnim unosom za moju kilazu i visinu</h5>
+            <br>
+            <canvas id="intakeChart"></canvas>
+        </div>
+
+        <div class="col-md-4">
+            <h5>Unos namirnica po kategorijama</h5>
+            <br>
+            <canvas id="consumedChart"></canvas>
+        </div>
+    </div>
+</div>
+
+
+<script
+        src="http://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script>
+<script src="js/my.js"></script>
+</body>
+</html>
